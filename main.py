@@ -5,7 +5,7 @@ class Solution(object):
             return False
         mapDict ={}
         for i in range(0,len(s1)):
-            #checking if the 
+            #checking if the character exists in the dictionary 
             if s1[i] not in mapDict:
                 mapDict[s1[i]] = s2[i]
             else:
@@ -16,9 +16,6 @@ class Solution(object):
      
 def main():
     import sys
-    # if len(sys.argv) < 3:
-    #     print("Incorrect Input")
-    #     return False
     try:
         arg1 = sys.argv[1]
         arg2 = sys.argv[2] 
